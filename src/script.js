@@ -4,12 +4,8 @@ document.getElementById('badgeForm').addEventListener('submit', function(event) 
 });
 
 document.getElementById('clearButton').addEventListener('click', function() {
-    // Clear number and text input fields
-    const inputs = document.querySelectorAll('#badgeForm input[type="number"], #badgeForm input[type="text"]');
-    inputs.forEach(input => {
-        input.value = '';
-    });
-
+    // Clear the form and result display
+    document.getElementById('badgeForm').reset();
     document.getElementById('badgePreview').innerHTML = '';
     document.getElementById('regenerateMessage').style.display = 'none'; // Hide the message when form is cleared
     document.getElementById('downloadSVGButton').style.display = 'none'; // Hide the download button when form is cleared
