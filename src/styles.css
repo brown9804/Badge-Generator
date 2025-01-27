@@ -48,3 +48,18 @@ button:hover {
     text-align: center;
     font-weight: bold;
 }
+
+#downloadSVGButton, #downloadPNGButton {
+    display: none;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#downloadSVGButton:hover, #downloadPNGButton:hover {
+    background-color: #45a049;
+}
