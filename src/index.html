@@ -7,67 +7,57 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Badge Generator</h1>
     <form id="badgeForm">
-        <label for="badgeWidth">Badge Width:</label>
-        <input type="number" id="badgeWidth" name="badgeWidth" value="300" required>
-
-        <label for="badgeHeight">Badge Height:</label>
-        <input type="number" id="badgeHeight" name="badgeHeight" value="300" required>
-
+        <label for="badgeWidth">Width:</label>
+        <input type="number" id="badgeWidth" name="badgeWidth" required><br>
+        <label for="badgeHeight">Height:</label>
+        <input type="number" id="badgeHeight" name="badgeHeight" required><br>
         <label for="backgroundColor">Background Color:</label>
-        <select id="backgroundColor" name="backgroundColor">
+        <select id="backgroundColor" name="backgroundColor" required>
             <option value="#FFFFFF">White</option>
-            <option value="#FF0000">Red</option>
-           ="#00FF00">Green</option>
-            <option value="#0000FF">Blue</option>
-            <!-- Add more colors as needed -->
-        </select>
-
+            <option value="#000000">Black</option>
+            <option value="#FF5733">Red</option>
+            <option value="#33FF57">Green</option>
+            <option value="#3357FF">Blue</option>
+            <option value="#FF33A1">Pink</option>
+            <option value="#A133FF">Purple</option>
+        </select><br>
         <label for="borderColor">Border Color:</label>
-        <select id="borderColor" name="borderColor">
+        <select id="borderColor" name="borderColor" required>
+            <option value="#FFFFFF">White</option>
             <option value="#000000">Black</option>
-            <option value="#FF0000">Red</option>
-            <option value="#00FF00">Green</option>
-            <option value="#0000FF">Blue</option>
-            <!-- Add more colors as needed -->
-        </select>
-
+            <option value="#FF5733">Red</option>
+            <option value="#33FF57">Green</option>
+            <option value="#3357FF">Blue</option>
+            <option value="#FF33A1">Pink</option>
+            <option value="#A133FF">Purple</option>
+        </select><br>
         <label for="textColor">Text Color:</label>
-        <select id="textColor" name="textColor">
+        <select id="textColor" name="textColor" required>
+            <option value="#FFFFFF">White</option>
             <option value="#000000">Black</option>
-            <option value="#FF0000">Red</option>
-            <option value="#00FF00">Green</option>
-            <option value="#0000FF">Blue</option>
-            <!-- Add more colors as needed -->
-        </select>
-
-        <label for="logoColor">Logo Color:</label>
-        <select id="logoColor" name="logoColor">
-            <option value="#F25022">Microsoft Orange</option>
-            <option value="#7FBA00">Microsoft Green</option>
-            <option value="#00A4EF">Microsoft Blue</option>
-            <option value="#FFB900">Microsoft Yellow</option>
-            <!-- Add more colors as needed -->
-        </select>
-
+            <option value="#FF5733">Red</option>
+            <option value="#33FF57">Green</option>
+            <option value="#3357FF">Blue</option>
+            <option value="#FF33A1">Pink</option>
+            <option value="#A133FF">Purple</option>
+        </select><br>
+        <label for="logoUrl">Logo URL:</label>
+        <input type="url" id="logoUrl" name="logoUrl" required><br>
         <label for="shape">Shape:</label>
-        <select id="shape" name="shape">
+        <select id="shape" name="shape" required>
             <option value="circle">Circle</option>
             <option value="square">Square</option>
-            <!-- Add more shapes as needed -->
-        </select>
-
+        </select><br>
         <label for="description">Description:</label>
-        <input type="text" id="description" name="description" placeholder="Enter description" required>
-
+        <input type="text" id="description" name="description" required><br>
         <label for="additionalText">Additional Text:</label>
-        <input type="text" id="additionalText" name="additionalText" placeholder="Enter additional text" required>
-
+        <input type="text" id="additionalText" name="additionalText" required><br>
         <button type="submit">Generate Badge</button>
         <button type="button" id="clearButton">Clear</button>
+        <p id="regenerateMessage">Please regenerate the badge since parameters have changed.</p>
     </form>
     <div id="badgePreview"></div>
-    <script src="script.js"></script>
+    <script src="badgeGenerator.js"></script>
 </body>
 </html>
