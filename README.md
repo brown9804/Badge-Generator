@@ -9,7 +9,21 @@ Last updated: 2025-01-27
 
 ------------------------------------------
 
-> I've created this [Badge Generator](https://brown9804.github.io/Badge-Generator/) to give the community an open-source tool for customizing and generating badges for workshops or events. Remember, no data is stored, so when you generate a badge, make sure to click save svg to download it to your local device.
+> [!IMPORTANT]
+> I've created this [Badge Generator](https://brown9804.github.io/Badge-Generator/) to give the community an open-source tool for customizing and generating badges for workshops or events. `No data is stored, so when you generate a badge, make sure to click save svg to download it to your local device.`
+
+Example of expected values: 
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/978aa58e-c3cd-4761-a3cf-a66e0b04b7be" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+</div>
+
+> [!NOTE]
+> Remember, no data is stored, so when you generate a badge, make sure to click `Download PNG` or `Download SVG` to download it to your local device.
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/51adb732-b752-4323-bb66-b9ce66a8c513" alt="Centered Image" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+</div>
 
 ## Overview
 
@@ -21,7 +35,8 @@ Last updated: 2025-01-27
 - `.gitignore`: Specifies files and directories that should be ignored by Git.
 - `LICENSE`: Contains the license information for the project.
 - `README.md`: Provides documentation about the project, including how to set it up and use it.
-  
+
+
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>
   <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
